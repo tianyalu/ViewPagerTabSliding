@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTabSliding">
+        <attr name="circleDefColor" format="color"/>
+        <attr name="circleSelColor" format="color"/>
+        <attr name="lineDefColor" format="color"/>
+        <attr name="lineSelColor" format="color"/>
+        <attr name="textDefColor" format="color"/>
+        <attr name="textSelColor" format="color"/>
+        <attr name="firstTextColor" format="color"/>
+        <attr name="secondTextColor" format="color"/>
+        <attr name="lineHeight" format="dimension"/>
+        <attr name="circleRadius" format="dimension"/>
+        <attr name="textLength" format="dimension"/>
+        <attr name="number" format="integer"/>
+        <attr name="curCircle" format="integer"/>
+        <attr name="curPage" format="integer"/>
+        <attr name="curPercent" format="float"/>
+        <attr name="firstTextSize" format="dimension"/>
+        <attr name="secondTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>

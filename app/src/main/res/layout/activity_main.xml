@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.sty.viewpager.tab.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipChildren="false">
+
+        <LinearLayout
+            android:id="@+id/ll_level_bar"
+            android:layout_width="10000dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:orientation="vertical">
+            <com.sty.viewpager.tab.view.CustomTabSliding
+                android:id="@+id/cts_level_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:circleDefColor="@android:color/white"
+                app:circleSelColor="#FFDF25"
+                app:lineDefColor="#89D19B"
+                app:lineSelColor="#FFDF25"
+                app:firstTextColor="#FFDF25"
+                app:secondTextColor="@android:color/white"
+                app:firstTextSize="12sp"
+                app:secondTextSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:clipChildren="false">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:clipChildren="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
